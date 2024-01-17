@@ -7,6 +7,7 @@
 
 # floatFormat function rounds the number to 2 decimal places
 def floatFormat(number):
+  # round is a built-in function in python, it takes two parameters, number and decimal places
   return round(number, 2)
 
 # calculateTip function calculates the tip based on the bill and tip percentage
