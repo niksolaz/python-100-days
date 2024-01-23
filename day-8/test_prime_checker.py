@@ -5,18 +5,18 @@ from prime_checker import prime_checker  # Assicurati che il nome dello script s
 class TestPrimeChecker(unittest.TestCase):
     def test_prime_number(self):
         self.assertEqual(prime_checker(5), (True, []))
-
-    def test_non_prime_number(self):
+    
+    def test_not_prime_number(self):
         self.assertEqual(prime_checker(4), (False, [2]))
 
-    def test_one(self):
+    def test_not_number(self):
+        self.assertEqual(prime_checker("ciao"), (False, []))
+
+    def test_minore_di_due(self):
         self.assertEqual(prime_checker(1), (False, []))
 
-    def test_zero(self):
-        self.assertEqual(prime_checker(0), (False, []))
-
-    def test_negative_number(self):
-        self.assertEqual(prime_checker(-3), (False, []))
+    def test_numero_negativo(self):
+        self.assertEqual(prime_checker(-1), (False, []))
 
 if __name__ == '__main__':
     unittest.main()
