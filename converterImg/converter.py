@@ -3,7 +3,7 @@ import os
 
 def convert_images_to_webp(source_folder):
     # Estensioni dei file da convertire
-    extensions = ('.png', '.jpeg', '.jpg', '.tiff')
+    extensions = ('.png', '.jpeg', '.jpg', '.tiff', '.bmp', '.gif', '.ppm', '.pgm', '.pbm', '.pnm', '.hdr', '.heif', '.bat', '.bpg', '.jxr', '.ico', '.cur', '.dds', '.tga', '.svg', '.eps', '.pdf', '.wmf', '.emf', '.dib', '.jp2', '.j2k', '.jpf', '.jpx', '.jpm', '.mj2', '.jxr', '.hdp', '.wdp', '.hdp', '.wdp', '.jxr')
     
     for root, dirs, files in os.walk(source_folder):
         for file in files:
