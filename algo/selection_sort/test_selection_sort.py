@@ -27,4 +27,5 @@ class TestSelectionSort(unittest.TestCase):
 if __name__ == '__main__':
     unittest.main()
 
+# python -m unittest test_selection_sort.py
     
